@@ -1,0 +1,29 @@
+/*Дан символ C и строки S, S0.После каждого вхождения символа C
+в строку S вставить строку S0.*/
+
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	
+	char s[100];
+	char s0[100];
+	cout << "enter s:"<<"\t";
+	gets_s(s);
+	cout << "enter s0:" << "\t";
+	gets_s(s0);
+	char c;
+	cout << "enter c:"<< "\t";
+	cin >> c;
+	for (int i = 0; i < strlen(s); i++)
+	{
+		cout<<s[i];
+		if(s[i]==c)
+		{
+			cout << s0;
+		}
+	}
+}
+
